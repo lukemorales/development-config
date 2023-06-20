@@ -1,12 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Default",
+  "display": "@lukemorales/default-tsconfig",
   "compilerOptions": {
     "composite": false,
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
+    "outDir": "dist",
+    "incremental": true,
+    "noImplicitOverride": true,
     "inlineSources": false,
     "isolatedModules": true,
     "moduleResolution": "node",
@@ -16,5 +20,6 @@
     "skipLibCheck": true,
     "strict": true
   },
+  "include": ["**/*.config.js"],
   "exclude": ["node_modules"]
 }

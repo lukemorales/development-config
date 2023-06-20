@@ -1,0 +1,21 @@
+{
+  "name": "prettier-config-lukemorales",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./with-tailwind": "./with-tailwind.js"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0"
+  },
+  "peerDependencies": {
+    "prettier": ">= 2.7.1",
+    "prettier-plugin-tailwindcss": ">= 0.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

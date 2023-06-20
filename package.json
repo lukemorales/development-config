@@ -1,24 +1,32 @@
 {
   "name": "@lukemorales/development-config",
+  "license": "MIT",
   "version": "0.0.0",
+  "author": "Luke Morales <lukemorales@live.com>",
+  "description": "My personal development config with opinionated ESLint, Prettier and TSConfig settings",
+  "homepage": "https://github.com/lukemorales/development-config#readme",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukemorales/development-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lukemorales/development-config/issues"
   },
   "devDependencies": {
-    "eslint-config-lukemorales": "workspace:*",
-    "prettier": "latest",
-    "turbo": "latest"
+    "turbo": "^1.10.3"
   },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "dependencies": {},
-  "packageManager": "pnpm@7.12.2"
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "ecmascript",
+    "format",
+    "formatting",
+    "eslint",
+    "lint",
+    "eslintconfig",
+    "eslint-config",
+    "prettier",
+    "lukemorales"
+  ]
 }
