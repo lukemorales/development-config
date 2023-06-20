@@ -116,7 +116,7 @@ jobs:
           setupGitUser: false
           title: "chore(changesets): bump package version"
           commit: "chore: bump package version"
-          version: node .github/changeset-version.js
+          version: pnpm run version-packages
           publish: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -15,6 +15,8 @@
   },
   "scripts": {
     "build": "turbo run build",
+    "changeset": "changeset",
+    "version-packages": "node .github/changeset-version.js",
     "release": "turbo run build && changeset version && changeset publish"
   },
   "dependencies": {
