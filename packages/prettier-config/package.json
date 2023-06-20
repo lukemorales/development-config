@@ -1,15 +1,20 @@
 {
-  "name": "prettier-config-lukemorales",
+  "name": "@lukemorales/prettier-config",
   "version": "0.0.0",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
   "exports": {
-    ".": "./index.js",
-    "./with-tailwind": "./with-tailwind.js"
+    ".": "./dist/index.js",
+    "./with-tailwind": "./dist/with-tailwind.js"
+  },
+  "scripts": {
+    "build": "rimraf dist && copyfiles -u 1 \"src/**/*\" dist"
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.3.0"
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "rimraf": "^5.0.1"
   },
   "peerDependencies": {
     "prettier": ">= 2.7.1",

@@ -13,6 +13,9 @@
   "bugs": {
     "url": "https://github.com/lukemorales/development-config/issues"
   },
+  "scripts": {
+    "release": "turbo run build && changeset version && changeset publish"
+  },
   "devDependencies": {
     "turbo": "^1.10.3"
   },
@@ -28,5 +31,9 @@
     "eslint-config",
     "prettier",
     "lukemorales"
-  ]
+  ],
+  "dependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.1"
+  }
 }
