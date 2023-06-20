@@ -4,4 +4,4 @@
 "@lukemorales/tsconfig": patch
 ---
 
-Initial release
+Initial release of config packages
