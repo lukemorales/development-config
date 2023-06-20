@@ -14,6 +14,7 @@
     "url": "https://github.com/lukemorales/development-config/issues"
   },
   "scripts": {
+    "build": "turbo run build",
     "release": "turbo run build && changeset version && changeset publish"
   },
   "devDependencies": {
