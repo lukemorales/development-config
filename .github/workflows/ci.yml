@@ -21,7 +21,7 @@ jobs:
       - name: 🔧 Install PNPM
         uses: pnpm/action-setup@v2.2.4
         with:
-          version: 7
+          version: 8
 
       - name: ♻️ Cache node_modules
         uses: actions/cache@v3
@@ -53,7 +53,7 @@ jobs:
       - name: 🔧 Install PNPM
         uses: pnpm/action-setup@v2.2.4
         with:
-          version: 7
+          version: 8
 
       - name: ♻️ Load node_modules
         uses: actions/cache@v3
