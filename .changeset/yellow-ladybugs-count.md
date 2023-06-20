@@ -1,5 +1,7 @@
 ---
+"@lukemorales/prettier-config": patch
+"eslint-config-lukemorales": patch
 "@lukemorales/tsconfig": patch
 ---
 
-Adjust package exports and build steps
+Initial release of config packages

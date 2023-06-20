@@ -19,7 +19,7 @@ jobs:
       - name: 🔧 Install PNPM
         uses: pnpm/action-setup@v2.2.4
         with:
-          version: 8
+          version: 7
 
       - name: ♻️ Cache node_modules
         uses: actions/cache@v3
@@ -33,7 +33,7 @@ jobs:
       - name: 🛠️ Setup Node and install project dependencies
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '16.x'
           check-latest: true
           cache: 'pnpm'
 
@@ -51,12 +51,12 @@ jobs:
       - name: 🔧 Install PNPM
         uses: pnpm/action-setup@v2.2.4
         with:
-          version: 8
+          version: 7
 
       - name: 🛠️ Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '16.x'
           check-latest: true
           cache: 'pnpm'
 
@@ -82,7 +82,7 @@ jobs:
       - name: 🔧 Install PNPM
         uses: pnpm/action-setup@v2.2.4
         with:
-          version: 8
+          version: 7
 
       - name: ♻️ Load node_modules
         uses: actions/cache@v3
@@ -99,7 +99,7 @@ jobs:
       - name: 🛠️ Setup Node for NPM
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '16.x'
           check-latest: true
           cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
