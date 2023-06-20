@@ -3,7 +3,7 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "lukemorales/exhaustive"
+      "repo": "lukemorales/development-config"
     }
   ],
   "commit": false,
