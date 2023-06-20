@@ -69,7 +69,6 @@ jobs:
 
   release:
     name: 🚀 Release to NPM
-    if: github.event.inputs.forceGPR != 'true'
     runs-on: ubuntu-latest
     needs: build
     outputs:
@@ -100,7 +99,7 @@ jobs:
       - name: 🛠️ Setup Node for NPM
         uses: actions/setup-node@v3
         with:
-          node-version: '16.14.2'
+          node-version: '16'
           check-latest: true
           cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
