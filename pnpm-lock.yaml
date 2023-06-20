@@ -107,7 +107,14 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1
 
-  packages/tsconfig: {}
+  packages/tsconfig:
+    devDependencies:
+      copyfiles:
+        specifier: ^2.4.1
+        version: 2.4.1
+      rimraf:
+        specifier: ^5.0.1
+        version: 5.0.1
 
 packages:
 

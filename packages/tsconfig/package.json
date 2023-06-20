@@ -1,9 +1,21 @@
 {
   "name": "@lukemorales/tsconfig",
   "version": "0.0.0",
+  "license": "MIT",
+  "main": "./dist/strict.json",
   "files": [
-    "strict.json"
+    "dist"
   ],
+  "exports": {
+    ".": "./dist/strict.json"
+  },
+  "scripts": {
+    "build": "rimraf dist && copyfiles -u 1 \"src/**/*\" dist"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^5.0.1"
+  },
   "publishConfig": {
     "access": "public"
   }
