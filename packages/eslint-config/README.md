@@ -1,70 +1,102 @@
-# Turborepo starter
+# eslint-config-lukemorales
 
-This is an official pnpm starter turborepo.
+## 📦 Install
 
-## What's inside?
+This ESLint config is available as a package on NPM, install with your favorite package manager:
 
-This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
-
-### Packages
-
-- `eslint-config-lukemorales`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run build
+```dircolors
+npm install eslint-config-lukemorales
 ```
 
-### Develop
+## ⚡ Quick start
+Add the following code to your `package.json`:
 
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-pnpm dlx turbo login
+```json
+"eslintConfig": {
+   "extends": [
+      "lukemorales"
+   ]
+},
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+You can alternatively create a `.eslintrc` file in the root of your project's directory. Your `.eslintrc` file should look like this:
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
+```json
+{
+  "extends": [
+    "lukemorales"
+  ]
+}
 ```
-pnpm dlx turbo link
+
+Add scripts to your `package.json` to lint and fix:
+
+```json
+"scripts": {
+  "lint": "eslint .",
+  "lint:fix": "eslint . --fix"
+},
 ```
 
-## Useful Links
+## 📝 Linting styles
 
-Learn more about the power of Turborepo:
+This package exposes different linting rules:
 
-- [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
-- [Caching](https://turborepo.org/docs/core-concepts/caching)
-- [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+### Default
+
+Contains opinionated javascript, typescript, importing rules and disables conflicting rules with `prettier` for use with the formatter.
+
+```json
+{
+  "extends": [
+    "lukemorales"
+  ]
+}
+```
+
+### React
+
+Contains opinionated React linting rules.
+
+```json
+{
+  "extends": [
+    "lukemorales/react"
+  ]
+}
+```
+
+### Next
+
+Contains opinionated NextJS linting rules.
+
+```json
+{
+  "extends": [
+    "lukemorales/next"
+  ]
+}
+```
+
+### Jest
+
+Contains opinionated Jest linting rules for better testing.
+
+```json
+{
+  "extends": [
+    "lukemorales/jest"
+  ]
+}
+```
+
+### OSS
+
+Contains the `default` linting rules with some slight modifications better suited for OSS development
+
+```json
+{
+  "extends": [
+    "lukemorales/oss"
+  ]
+}
