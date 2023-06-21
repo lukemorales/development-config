@@ -10,6 +10,10 @@
   "scripts": {
     "build": "rimraf dist && copyfiles -u 1 \"src/**/*\" dist"
   },
+  "dependencies": {
+    "prettier-plugin-nginx": "^1.0.3",
+    "prettier-plugin-pkg": "^0.17.1"
+  },
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "prettier": "^2.8.8",
@@ -19,6 +23,14 @@
   "peerDependencies": {
     "prettier": ">= 2.7.1",
     "prettier-plugin-tailwindcss": ">= 0.3.0"
+  },
+  "peerDependenciesMeta": {
+    "prettier": {
+      "optional": false
+    },
+    "prettier-plugin-tailwindcss": {
+      "optional": true
+    }
   },
   "publishConfig": {
     "access": "public"
