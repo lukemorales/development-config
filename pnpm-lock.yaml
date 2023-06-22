@@ -93,13 +93,6 @@ importers:
         version: 4.7.4
 
   packages/prettier-config:
-    dependencies:
-      prettier-plugin-nginx:
-        specifier: ^1.0.3
-        version: 1.0.3
-      prettier-plugin-pkg:
-        specifier: ^0.17.1
-        version: 0.17.1(prettier@2.8.8)
     devDependencies:
       copyfiles:
         specifier: ^2.4.1
@@ -2985,19 +2978,6 @@ packages:
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
-    dev: false
-
-  /prettier-plugin-nginx@1.0.3:
-    resolution: {integrity: sha512-vV5q85s8XnV6NEgvz1gVLfZhmxAxY03MyOYj2ApBpjFkbs00lRsRkTmqO9L39ADuD18z1RRCcfZ3eVxKhI/nqg==}
-    dev: false
-
-  /prettier-plugin-pkg@0.17.1(prettier@2.8.8):
-    resolution: {integrity: sha512-XPRRMQR5oseJXdfK8kQDj2LCV1UjmTuDlPbbJ8C2WLaATNhdvZLhQO0+NtWnRrQTP+erLR5cVxfcwyqF+3R8SA==}
-    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
-    peerDependencies:
-      prettier: ^2.0.0
-    dependencies:
-      prettier: 2.8.8
     dev: false
 
   /prettier-plugin-tailwindcss@0.3.0(prettier@2.8.8):

@@ -1,6 +1,4 @@
-const baseConfig = require("./base");
-
 module.exports = {
-  ...baseConfig,
-  plugins: baseConfig.plugins.concat[require("prettier-plugin-tailwindcss")],
+  ...require("./base"),
+  plugins: [require("prettier-plugin-tailwindcss")],
 };
