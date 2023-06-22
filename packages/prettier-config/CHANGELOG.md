@@ -1,5 +1,11 @@
 # @lukemorales/prettier-config
 
+## 0.1.1
+
+### Patch Changes
+
+- [`2124942`](https://github.com/lukemorales/development-config/commit/2124942c38dcb8f0701941eb39d63691ce289ca8) Thanks [@lukemorales](https://github.com/lukemorales)! - Remove default config plugins
+
 ## 0.1.0
 
 ### Minor Changes
