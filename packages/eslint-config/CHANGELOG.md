@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.1.1
+
+### Patch Changes
+
+- [`9424d71`](https://github.com/lukemorales/development-config/commit/9424d71a08061fa7ed019c0b6388c23dd66f0b09) Thanks [@lukemorales](https://github.com/lukemorales)! - Fix extending `plugin:react/jsx-runtime` config
+
 ## 0.1.0
 
 ### Minor Changes
