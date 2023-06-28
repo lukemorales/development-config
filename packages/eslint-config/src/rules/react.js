@@ -43,6 +43,16 @@ module.exports = {
     "react/no-access-state-in-setstate": "error",
     "react/no-array-index-key": "error",
     "react/no-children-prop": "error",
+    "react/jsx-no-bind": [
+      "error",
+      {
+        ignoreDOMComponents: true,
+        ignoreRefs: true,
+        allowArrowFunctions: true,
+        allowFunctions: true,
+        allowBind: false,
+      },
+    ],
     "react/no-multi-comp": "off",
     "react/no-redundant-should-component-update": "off",
     "react/no-this-in-sfc": "off",
