@@ -25,6 +25,12 @@ module.exports = {
     "no-secrets/no-secrets": ["error", { tolerance: 4.3 }],
     "no-shadow": "off",
     "no-return-await": "off",
+    "no-restricted-syntax": [
+      "error",
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement",
+    ],
     "no-underscore-dangle": "off",
     "no-unneeded-ternary": "error",
     "no-unused-expressions": "off",
