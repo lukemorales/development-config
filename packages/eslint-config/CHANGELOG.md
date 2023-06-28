@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.2.1
+
+### Patch Changes
+
+- [`d5cd5bf`](https://github.com/lukemorales/development-config/commit/d5cd5bf6999b8e668fdf783699af7938b2532770) Thanks [@lukemorales](https://github.com/lukemorales)! - Adjust `react/jsx-no-bind` rule
+
 ## 0.2.0
 
 ### Minor Changes
