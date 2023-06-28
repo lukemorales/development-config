@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.1.2
+
+### Patch Changes
+
+- [`44a88a9`](https://github.com/lukemorales/development-config/commit/44a88a933918c3f284b53dc48f234a8bc7991ab7) Thanks [@lukemorales](https://github.com/lukemorales)! - Add missing `eslint-plugin-storybook` dependency
+
 ## 0.1.1
 
 ### Patch Changes
