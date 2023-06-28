@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.2.0
+
+### Minor Changes
+
+- [`e8fb0b8`](https://github.com/lukemorales/development-config/commit/e8fb0b85a657b34cd5644e68e07ff4058e191909) Thanks [@lukemorales](https://github.com/lukemorales)! - Allow `for of` loops
+
 ## 0.1.2
 
 ### Patch Changes
