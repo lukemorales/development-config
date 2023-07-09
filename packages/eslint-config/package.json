@@ -29,7 +29,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-no-secrets": "^0.8.9",
     "eslint-plugin-react": "7.32.2",
-    "eslint-plugin-react-hooks": "^5.0.0-canary-fdc8c81e0-20230707",
+    "eslint-plugin-react-hooks": "5.0.0-canary-7118f5dd7-20230705",
     "eslint-plugin-react-redux": "^4.0.0",
     "eslint-plugin-storybook": "^0.6.12",
     "eslint-plugin-testing-library": "^5.11.0"
