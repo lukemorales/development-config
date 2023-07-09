@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.2.2
+
+### Patch Changes
+
+- [`0e422eb`](https://github.com/lukemorales/development-config/commit/0e422ebcfc413d344be28bab7897cd3ab97ad6ce) Thanks [@lukemorales](https://github.com/lukemorales)! - Upgrade dependencies and rules of hooks to account for async components
+
 ## 0.2.1
 
 ### Patch Changes
