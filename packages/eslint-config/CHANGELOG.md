@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.2.3
+
+### Patch Changes
+
+- [`a1bdce5`](https://github.com/lukemorales/development-config/commit/a1bdce50673a47d9dff0ad47b4c038ebdb214396) Thanks [@lukemorales](https://github.com/lukemorales)! - Remove `airbnb/hooks` in favor of inline declaration
+
 ## 0.2.2
 
 ### Patch Changes
