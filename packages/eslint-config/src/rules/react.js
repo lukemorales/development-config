@@ -2,7 +2,6 @@
 module.exports = {
   extends: [
     "airbnb",
-    "airbnb/hooks",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-redux/recommended",
@@ -10,6 +9,14 @@ module.exports = {
   ],
   plugins: ["react", "react-redux", "react-hooks"],
   rules: {
+    // Enforce Rules of Hooks
+    // https://github.com/facebook/react/blob/c11015ff4f610ac2924d1fc6d569a17657a404fd/packages/eslint-plugin-react-hooks/src/RulesOfHooks.js
+    "react-hooks/rules-of-hooks": "error",
+
+    // Verify the list of the dependencies for Hooks like useEffect and similar
+    // https://github.com/facebook/react/blob/1204c789776cb01fbaf3e9f032e7e2ba85a44137/packages/eslint-plugin-react-hooks/src/ExhaustiveDeps.js
+    "react-hooks/exhaustive-deps": "error",
+
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/label-has-associated-control": ["error", { assert: "either" }],
     "react/function-component-definition": [
