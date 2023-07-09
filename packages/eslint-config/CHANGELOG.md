@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.2.4
+
+### Patch Changes
+
+- [`92938c7`](https://github.com/lukemorales/development-config/commit/92938c78a4322fa1335d38aab2a8817840d05148) Thanks [@lukemorales](https://github.com/lukemorales)! - Use `plugin:react-hooks/recommended`
+
 ## 0.2.3
 
 ### Patch Changes
