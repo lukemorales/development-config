@@ -1,5 +1,11 @@
 # @lukemorales/prettier-config
 
+## 1.0.0
+
+### Major Changes
+
+- [`29f4e57`](https://github.com/lukemorales/development-config/commit/29f4e579dc7e7f5051c1dd43f3cd517470c64909) Thanks [@lukemorales](https://github.com/lukemorales)! - Adapt config and bump dependencies for prettier v3
+
 ## 0.1.1
 
 ### Patch Changes
