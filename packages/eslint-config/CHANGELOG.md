@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.3.0
+
+### Minor Changes
+
+- [`4489df7`](https://github.com/lukemorales/development-config/commit/4489df7e00e1f5a7624c7717ff924add05da2e44) Thanks [@lukemorales](https://github.com/lukemorales)! - Upgrade dependencies and change a few rules
+
 ## 0.2.4
 
 ### Patch Changes
