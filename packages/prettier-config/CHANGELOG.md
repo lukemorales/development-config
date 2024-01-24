@@ -1,5 +1,11 @@
 # @lukemorales/prettier-config
 
+## 1.1.0
+
+### Minor Changes
+
+- [`4489df7`](https://github.com/lukemorales/development-config/commit/4489df7e00e1f5a7624c7717ff924add05da2e44) Thanks [@lukemorales](https://github.com/lukemorales)! - Upgrade dependencies and change a few rules
+
 ## 1.0.0
 
 ### Major Changes
