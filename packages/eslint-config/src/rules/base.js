@@ -9,6 +9,7 @@ module.exports = {
     "implicit-arrow-linebreak": "off",
     "no-await-in-loop": "off",
     "no-console": ["warn", { allow: ["warn", "error"] }],
+    "no-continue": "off",
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
     "no-param-reassign": [
       "error",
@@ -22,15 +23,21 @@ module.exports = {
         ],
       },
     ],
-    "no-secrets/no-secrets": ["error", { tolerance: 4.3 }],
-    "no-shadow": "off",
+    "no-promise-executor-return": "error",
     "no-return-await": "off",
     "no-restricted-syntax": [
       "error",
       "ForInStatement",
       "LabeledStatement",
       "WithStatement",
+      {
+        selector: "TSEnumDeclaration",
+        message:
+          "Typescript enums are bad, use an object literal and cast it with `as const` instead",
+      },
     ],
+    "no-secrets/no-secrets": ["error", { tolerance: 4.3 }],
+    "no-shadow": "off",
     "no-underscore-dangle": "off",
     "no-unneeded-ternary": "error",
     "no-unused-expressions": "off",

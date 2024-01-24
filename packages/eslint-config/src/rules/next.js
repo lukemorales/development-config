@@ -4,12 +4,6 @@ module.exports = {
   rules: {},
   overrides: [
     {
-      files: ["**/app/**/*.ts?(x)"],
-      rules: {
-        "@next/next/no-head-element": "off",
-      },
-    },
-    {
       files: [
         "**/app/**/{layout,loading,error,global-error,route,default,template,not-found,page}.tsx",
       ],
@@ -22,12 +16,6 @@ module.exports = {
             unnamedComponents: "arrow-function",
           },
         ],
-      },
-    },
-    {
-      files: ["**/app/**/head.tsx"],
-      rules: {
-        "react/jsx-no-useless-fragment": "off",
       },
     },
   ],

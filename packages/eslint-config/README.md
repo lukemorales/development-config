@@ -16,7 +16,7 @@ Add the following code to your `package.json`:
    "extends": [
       "lukemorales"
    ]
-},
+}
 ```
 
 You can alternatively create a `.eslintrc` file in the root of your project's directory. Your `.eslintrc` file should look like this:
@@ -68,7 +68,7 @@ Contains opinionated React linting rules.
 
 ### Next
 
-Contains opinionated NextJS linting rules.
+Contains opinionated React and NextJS linting rules.
 
 ```json
 {

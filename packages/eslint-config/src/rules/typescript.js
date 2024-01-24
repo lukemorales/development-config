@@ -38,132 +38,132 @@ module.exports = {
     "@typescript-eslint/member-ordering": [
       "error",
       {
-        classes: [
-          // Index signature
-          "signature",
-
-          // Fields
-          "public-static-field",
-          "protected-static-field",
-          "private-static-field",
-
-          "public-decorated-field",
-          "protected-decorated-field",
-          "private-decorated-field",
-
-          "public-instance-field",
-          "protected-instance-field",
-          "private-instance-field",
-
-          "public-abstract-field",
-          "protected-abstract-field",
-
-          "public-field",
-          "protected-field",
-          "private-field",
-
-          "static-field",
-          "instance-field",
-          "abstract-field",
-
-          "decorated-field",
-
-          "field",
-
-          // Static initialization
-          "static-initialization",
-
-          // Constructors
-          "public-constructor",
-          "protected-constructor",
-          "private-constructor",
-
-          "constructor",
-
-          // Getters
-          "public-static-get",
-          "protected-static-get",
-          "private-static-get",
-
-          "public-decorated-get",
-          "protected-decorated-get",
-          "private-decorated-get",
-
-          "public-instance-get",
-          "protected-instance-get",
-          "private-instance-get",
-
-          "public-abstract-get",
-          "protected-abstract-get",
-
-          "public-get",
-          "protected-get",
-          "private-get",
-
-          "static-get",
-          "instance-get",
-          "abstract-get",
-
-          "decorated-get",
-
-          "get",
-
-          // Setters
-          "public-static-set",
-          "protected-static-set",
-          "private-static-set",
-
-          "public-decorated-set",
-          "protected-decorated-set",
-          "private-decorated-set",
-
-          "public-instance-set",
-          "protected-instance-set",
-          "private-instance-set",
-
-          "public-abstract-set",
-          "protected-abstract-set",
-
-          "public-set",
-          "protected-set",
-          "private-set",
-
-          "static-set",
-          "instance-set",
-          "abstract-set",
-
-          "decorated-set",
-
-          "set",
-
-          // Methods
-          "public-static-method",
-          "protected-static-method",
-          "private-static-method",
-
-          "public-decorated-method",
-          "protected-decorated-method",
-          "private-decorated-method",
-
-          "public-instance-method",
-          "protected-instance-method",
-          "private-instance-method",
-
-          "public-abstract-method",
-          "protected-abstract-method",
-
-          "public-method",
-          "protected-method",
-          "private-method",
-
-          "static-method",
-          "instance-method",
-          "abstract-method",
-
-          "decorated-method",
-
-          "method",
-        ],
+        // classes: [
+        //   // Index signature
+        //   "signature",
+        //
+        //   // Fields
+        //   "public-static-field",
+        //   "protected-static-field",
+        //   "private-static-field",
+        //
+        //   "public-decorated-field",
+        //   "protected-decorated-field",
+        //   "private-decorated-field",
+        //
+        //   "public-instance-field",
+        //   "protected-instance-field",
+        //   "private-instance-field",
+        //
+        //   "public-abstract-field",
+        //   "protected-abstract-field",
+        //
+        //   "public-field",
+        //   "protected-field",
+        //   "private-field",
+        //
+        //   "static-field",
+        //   "instance-field",
+        //   "abstract-field",
+        //
+        //   "decorated-field",
+        //
+        //   "field",
+        //
+        //   // Static initialization
+        //   "static-initialization",
+        //
+        //   // Constructors
+        //   "public-constructor",
+        //   "protected-constructor",
+        //   "private-constructor",
+        //
+        //   "constructor",
+        //
+        //   // Getters
+        //   "public-static-get",
+        //   "protected-static-get",
+        //   "private-static-get",
+        //
+        //   "public-decorated-get",
+        //   "protected-decorated-get",
+        //   "private-decorated-get",
+        //
+        //   "public-instance-get",
+        //   "protected-instance-get",
+        //   "private-instance-get",
+        //
+        //   "public-abstract-get",
+        //   "protected-abstract-get",
+        //
+        //   "public-get",
+        //   "protected-get",
+        //   "private-get",
+        //
+        //   "static-get",
+        //   "instance-get",
+        //   "abstract-get",
+        //
+        //   "decorated-get",
+        //
+        //   "get",
+        //
+        //   // Setters
+        //   "public-static-set",
+        //   "protected-static-set",
+        //   "private-static-set",
+        //
+        //   "public-decorated-set",
+        //   "protected-decorated-set",
+        //   "private-decorated-set",
+        //
+        //   "public-instance-set",
+        //   "protected-instance-set",
+        //   "private-instance-set",
+        //
+        //   "public-abstract-set",
+        //   "protected-abstract-set",
+        //
+        //   "public-set",
+        //   "protected-set",
+        //   "private-set",
+        //
+        //   "static-set",
+        //   "instance-set",
+        //   "abstract-set",
+        //
+        //   "decorated-set",
+        //
+        //   "set",
+        //
+        //   // Methods
+        //   "public-static-method",
+        //   "protected-static-method",
+        //   "private-static-method",
+        //
+        //   "public-decorated-method",
+        //   "protected-decorated-method",
+        //   "private-decorated-method",
+        //
+        //   "public-instance-method",
+        //   "protected-instance-method",
+        //   "private-instance-method",
+        //
+        //   "public-abstract-method",
+        //   "protected-abstract-method",
+        //
+        //   "public-method",
+        //   "protected-method",
+        //   "private-method",
+        //
+        //   "static-method",
+        //   "instance-method",
+        //   "abstract-method",
+        //
+        //   "decorated-method",
+        //
+        //   "method",
+        // ],
         interfaces: {
           memberTypes: ["signature"],
           order: "alphabetically-case-insensitive",
@@ -215,7 +215,7 @@ module.exports = {
     "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "warn",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
     "no-return-await": "off",
-    "@typescript-eslint/return-await": "error",
+    "@typescript-eslint/return-await": ["error", "in-try-catch"],
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error", { ignoreTypeValueShadow: true }],
     "@typescript-eslint/unbound-method": "off",
@@ -280,6 +280,7 @@ module.exports = {
         "@typescript-eslint/no-unsafe-argument": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
       },
     },
   ],
