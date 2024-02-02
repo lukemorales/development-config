@@ -250,7 +250,7 @@ module.exports = {
     "@typescript-eslint/require-array-sort-compare": "error",
     "@typescript-eslint/restrict-plus-operands": [
       "error",
-      { checkCompoundAssignments: true },
+      { skipCompoundAssignments: true },
     ],
     "@typescript-eslint/switch-exhaustiveness-check": "warn",
     "@typescript-eslint/unified-signatures": "warn",
