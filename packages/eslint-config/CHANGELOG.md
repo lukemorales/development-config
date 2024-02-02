@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.3.1
+
+### Patch Changes
+
+- [`b9a3277`](https://github.com/lukemorales/development-config/commit/b9a32774adb30476ad9eae1639c7cbd5450e2ab2) Thanks [@lukemorales](https://github.com/lukemorales)! - Upgrade dependencies and fix typescript rule
+
 ## 0.3.0
 
 ### Minor Changes
