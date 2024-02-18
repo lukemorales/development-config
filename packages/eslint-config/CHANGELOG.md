@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.4.1
+
+### Patch Changes
+
+- [`30b30cb`](https://github.com/lukemorales/development-config/commit/30b30cb44dc475fd0c1bbf858feec5f91a41a42e) Thanks [@lukemorales](https://github.com/lukemorales)! - Fix `multiline-comment-style` rule
+
 ## 0.4.0
 
 ### Minor Changes
