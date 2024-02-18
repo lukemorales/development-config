@@ -1,65 +1,104 @@
 /** @type {import('@types/eslint').Linter.Config} */
 module.exports = {
   extends: ["airbnb-base"],
-  plugins: ["no-secrets"],
   rules: {
     "arrow-body-style": ["error", "as-needed"],
     camelcase: "off",
     "class-methods-use-this": "off",
+    "consistent-return": ["error", { treatUndefinedAsUnspecified: true }],
+    curly: ["error", "multi", "consistent"],
+    "grouped-accessor-pairs": ["error", "getBeforeSet"],
+    "guard-for-in": "error",
     "implicit-arrow-linebreak": "off",
+    "max-classes-per-file": "off",
     "no-await-in-loop": "off",
     "no-console": ["warn", { allow: ["warn", "error"] }],
-    "no-continue": "off",
-    "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
+    "no-fallthrough": [
+      "error",
+      { commentPattern: "break[\\\\s\\\\w]*omitted", allowEmptyCase: true },
+    ],
+    "no-labels": ["error", { allowLoop: true, allowSwitch: false }],
+    "no-native-reassign": "off",
     "no-param-reassign": [
       "error",
       {
         props: true,
         ignorePropertyModificationsForRegex: [
           "^draft",
-          "(result|map|set|obj|record|sum|group)",
-          "^acc",
+          "(e|ctx|context|result|map|set|obj|record|sum|group|staticContext)",
+          "^(acc|req|res)",
           ".*(Map|Set)$",
         ],
       },
     ],
+    "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
     "no-promise-executor-return": "error",
-    "no-return-await": "off",
+    "no-shadow": "off",
+    "no-underscore-dangle": "off",
+    "no-unneeded-ternary": "error",
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "no-useless-constructor": "off",
+    "no-useless-rename": [
+      "error",
+      { ignoreDestructuring: false, ignoreImport: false, ignoreExport: false },
+    ],
+    "no-void": "off",
+    "prefer-object-has-own": "error",
+    "prefer-template": "error",
+    "require-await": "off",
+    yoda: ["error", "never", { exceptRange: true }],
+
+    // style
+    "lines-around-directive": ["error", { before: "never", after: "always" }],
+    "logical-assignment-operators": [
+      "error",
+      "always",
+      { enforceForIfStatements: true },
+    ],
+    "multiline-comment-style": [
+      "error",
+      "separate-blocks",
+      { checkJSDoc: false },
+    ],
+    "multiline-ternary": ["error", "always-multiline"],
+    "newline-before-return": "error",
+    "no-continue": "off",
+    "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
     "no-restricted-syntax": [
       "error",
-      "ForInStatement",
-      "LabeledStatement",
-      "WithStatement",
+      {
+        selector: "ForInStatement",
+        message:
+          "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.",
+      },
+      {
+        selector: "LabeledStatement",
+        message:
+          "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.",
+      },
+      {
+        selector: "WithStatement",
+        message:
+          "`with` is disallowed in strict mode because it makes code impossible to predict and optimize.",
+      },
       {
         selector: "TSEnumDeclaration",
         message:
           "Typescript enums are bad, use an object literal and cast it with `as const` instead",
       },
     ],
-    "no-secrets/no-secrets": ["error", { tolerance: 4.3 }],
-    "no-shadow": "off",
-    "no-underscore-dangle": "off",
-    "no-unneeded-ternary": "error",
-    "no-unused-expressions": "off",
-    "no-unused-vars": "off",
-    "no-use-before-define": "off",
-    "no-useless-concat": "error",
-    "no-useless-constructor": "off",
-    "no-void": "off",
-    "prefer-template": "error",
     "padding-line-between-statements": [
       "warn",
-      // Note: When defining new entries for this rule keep the related lines
-      // together and separate them from other lines using blank lines.
-
-      // Require a blank line after groups of imports.
       { blankLine: "always", prev: "import", next: "*" },
       { blankLine: "any", prev: "import", next: ["import"] },
-
-      // Require a blank line after block-like statements.
       { blankLine: "always", prev: "block-like", next: "*" },
-      // Ignore rule for blocks within `switch` statements.
       { blankLine: "any", prev: "block-like", next: ["case", "default"] },
+    ],
+    "quote-props": [
+      "error",
+      "consistent-as-needed",
+      { keywords: false, unnecessary: true, numbers: false },
     ],
   },
 };

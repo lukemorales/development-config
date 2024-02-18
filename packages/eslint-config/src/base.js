@@ -12,10 +12,10 @@ module.exports = {
   },
   settings: {
     "import/resolver": {
-      node: { extensions: [".js", ".jsx", ".ts", ".tsx"] },
+      node: { extensions: [".js", ".cjs", ".mjs", ".jsx", ".ts", ".tsx"] },
       typescript: {},
     },
-    "import/extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx"],
+    "import/extensions": [".js", ".cjs", ".mjs", ".jsx", ".ts", ".tsx"],
   },
   extends: [
     "./rules/base",
