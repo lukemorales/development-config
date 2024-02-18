@@ -58,7 +58,7 @@ module.exports = {
     ],
     "multiline-comment-style": [
       "error",
-      "separate-blocks",
+      "separate-lines",
       { checkJSDoc: false },
     ],
     "multiline-ternary": ["error", "always-multiline"],
