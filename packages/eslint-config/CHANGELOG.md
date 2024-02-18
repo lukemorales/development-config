@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.4.0
+
+### Minor Changes
+
+- [`4d228d5`](https://github.com/lukemorales/development-config/commit/4d228d581e13fbe0af30834a64dd9ad087d3af8a) Thanks [@lukemorales](https://github.com/lukemorales)! - Upgrade dependencies and remove `airbnb` dependency
+
 ## 0.3.1
 
 ### Patch Changes
