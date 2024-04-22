@@ -1,5 +1,11 @@
 # eslint-config-lukemorales
 
+## 0.5.0
+
+### Minor Changes
+
+- [`468a95f`](https://github.com/lukemorales/development-config/commit/468a95f6fb55fdca62346037d8cab58ef4ae7b7f) Thanks [@lukemorales](https://github.com/lukemorales)! - Upgrade dependencies and add new linting rules
+
 ## 0.4.1
 
 ### Patch Changes
