@@ -12,8 +12,8 @@
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",
-    "prettier": "^3.2.4",
-    "prettier-plugin-tailwindcss": "^0.5.11",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "rimraf": "^5.0.5"
   },
   "peerDependencies": {
