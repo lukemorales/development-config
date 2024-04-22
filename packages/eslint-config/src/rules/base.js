@@ -13,6 +13,8 @@ module.exports = {
     "max-classes-per-file": "off",
     "no-await-in-loop": "off",
     "no-console": ["warn", { allow: ["warn", "error"] }],
+    "no-constant-condition": ["error", { checkLoops: false }],
+    "no-empty-function": ["error", { allow: ["constructors"] }],
     "no-fallthrough": [
       "error",
       { commentPattern: "break[\\\\s\\\\w]*omitted", allowEmptyCase: true },

@@ -220,7 +220,10 @@ module.exports = {
     "@typescript-eslint/no-shadow": ["error", { ignoreTypeValueShadow: true }],
     "@typescript-eslint/unbound-method": "off",
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "warn",
-    "@typescript-eslint/no-unnecessary-condition": "warn",
+    "@typescript-eslint/no-unnecessary-condition": [
+      "warn",
+      { allowConstantLoopConditions: true },
+    ],
     "@typescript-eslint/no-unnecessary-type-arguments": "warn",
     "@typescript-eslint/no-unnecessary-type-constraint": "error",
     "@typescript-eslint/no-unsafe-member-access": "error",
@@ -251,6 +254,10 @@ module.exports = {
     "@typescript-eslint/restrict-plus-operands": [
       "error",
       { skipCompoundAssignments: true },
+    ],
+    "@typescript-eslint/strict-boolean-expressions": [
+      "error",
+      { allowNumber: false },
     ],
     "@typescript-eslint/switch-exhaustiveness-check": "warn",
     "@typescript-eslint/unified-signatures": "warn",
